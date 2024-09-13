@@ -5,10 +5,11 @@ const Plane = require('./classes/Plane');
 
 
 function main() {
-    // You can run any of your classes here to test the outputs
-
+ const person1 = new Person('Justin', 'Dallas');
+ return person1.name;
 
 
 }
 
-main();
+console.log(main());
+
