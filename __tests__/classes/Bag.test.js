@@ -1,5 +1,5 @@
-const Bag = require("../classes/Bag");
-const Person = require('../classes/Person')
+const Bag = require('../../classes/Bag');
+const Person = require('../../classes/Person')
 
 describe("Bag Class", () => {
   test("should create a new bag instance", () => {
@@ -16,9 +16,9 @@ describe("Bag Class", () => {
     expect(bag.getOwner()).toBeNull();
   });
   test("should assign a Person as owner using assignOwner()", () => {
-    const bag = new Bag(11, "B333");
-    const person = new Person('Jim')
+    const person = new Person('Justin', 'Dallas');
+    const bag = new Bag(11, 'B123')
     bag.assignOwner(person);
-    expect(bag.assignOwner()).toBe(person);
+    expect(bag.getOwner()).toBe(person);
   });
 });

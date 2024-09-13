@@ -1,5 +1,5 @@
-const Person = require('../classes/Person');
-const Bag = require('../classes/Bag');
+const Person = require('../../classes/Person');
+const Bag = require('../../classes/Bag');
 
 describe('Person Class', () => {
     test('should create an instance of a person', () => {
@@ -19,6 +19,6 @@ describe('Person Class', () => {
         const person = new Person('Jason', 'Detroit');
         const bag = new Bag(13, 'B333');
         person.addBag(bag);
-        expect(person.addBag()).toContain(bag);
+        expect(person.getBags()).toContain(bag);
     });
 })
